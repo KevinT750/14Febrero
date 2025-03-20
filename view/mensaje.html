@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Último Regalo para Ti 🌸</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #fce4ec; /* Rosa suave */
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .card-container {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: #d81b60; /* Rosa oscuro */
+            margin-bottom: 20px;
+        }
+
+        .message, .poem {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .message p, .poem p {
+            margin-bottom: 15px;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .btn-custom {
+            background-color: #d81b60;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            padding: 10px 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #ad1457;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card-container">
+        <h1>Un Último Regalo para Ti… 🌸</h1>
+        
+        <div class="button-container">
+            <button id="showMessage" class="btn btn-custom">Mensaje</button>
+            <button id="showPoem" class="btn btn-custom">Poema</button>
+        </div>
+
+        <div id="message" class="message" style="display: none;">
+            <p>Toma estas flores. No son flores reales, sino un ramo hecho de ceros y unos, tejido con líneas de código. Tal vez no sean tan impresionantes como las que perfuman una habitación, pero estas son únicas, porque son solo para ti.</p>
+            <p>Son flores que representan lo mucho que te quise y lo mucho que aún te quiero. No tendrán aroma, no podrás tocarlas ni verlas cada día en un jarrón con agua, pero hay algo especial en ellas: estas flores nunca se marchitarán.</p>
+            <p>No morirán con el tiempo, no se perderán en el olvido. Seguirán existiendo en algún rincón del internet, resistiendo el paso de los años, permaneciendo intactas hasta que este mundo deje de ser.</p>
+            <p>Son eternas, como los recuerdos que llevo de ti. ❤️</p>
+            <div class="button-container">
+                <a href="flores.html" class="btn btn-custom">Ir a otra página</a>
+            </div>
+        </div>
+
+        <div id="poem" class="poem" style="display: none;">
+            <!-- Poema versos -->
+            <p id="verse1" style="display:none;">Un último regalo para ti, 🌸</p>
+            <p id="verse2" style="display:none;">flores de código, nacidas aquí, 💻</p>
+            <p id="verse3" style="display:none;">no son reales, no tienen color,</p>
+            <p id="verse4" style="display:none;">pero llevan consigo mi más puro amor. 💖</p>
+
+            <p id="verse5" style="display:none;">Hechas de ceros y unos al compás, 0️⃣1️⃣</p>
+            <p id="verse6" style="display:none;">en líneas de código, un lazo fugaz. ⌨️</p>
+            <p id="verse7" style="display:none;">No pueden oler, ni tocar ni ver,</p>
+            <p id="verse8" style="display:none;">pero su esencia siempre permanecerá, hasta el amanecer. 🌅</p>
+
+            <p id="verse9" style="display:none;">No se marchitarán, ni se desvanecerán,</p>
+            <p id="verse10" style="display:none;">como los recuerdos que en mi alma quedarán. 💭</p>
+            <p id="verse11" style="display:none;">Serán eternas, como el viento y el mar, 🌬️🌊</p>
+            <p id="verse12" style="display:none;">y seguirán en el internet, siempre al azar. 🌐</p>
+
+            <p id="verse13" style="display:none;">No necesitan agua, ni la luz del sol, 🌞</p>
+            <p id="verse14" style="display:none;">solo tu recuerdo, mi amor, mi sol. ☀️</p>
+            <p id="verse15" style="display:none;">Hasta el fin del mundo, hasta el último resplandor,</p>
+            <p id="verse16" style="display:none;">estas flores estarán, para ti, con todo mi ardor. 🌷❤️</p>
+
+            <div class="button-container">
+                <a href="flores.html" class="btn btn-custom">Ir a otra página</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Mostrar el mensaje o el poema al hacer clic
+        document.getElementById('showMessage').addEventListener('click', function() {
+            document.getElementById('message').style.display = 'block';
+            document.getElementById('poem').style.display = 'none';
+        });
+
+        document.getElementById('showPoem').addEventListener('click', function() {
+            document.getElementById('poem').style.display = 'block';
+            document.getElementById('message').style.display = 'none';
+            displayPoem();
+        });
+
+        // Función para mostrar el poema verso por verso cada 2 segundos
+        function displayPoem() {
+            let verses = document.querySelectorAll('.poem p');
+            let index = 0;
+            function showVerse() {
+                if (index < verses.length) {
+                    verses[index].style.display = 'block';
+                    index++;
+                }
+            }
+            // Mostrar el primer verso inmediatamente y luego cada 2 segundos
+            showVerse();
+            setInterval(showVerse, 2000);
+        }
+    </script>
+</body>
+
+</html>

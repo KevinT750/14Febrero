@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: 'DM Serif Text', serif;
+    color: #d6336c;
+}
+
+.psorpresa {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.barra-navegacion {
+    margin-top: 30px;
+}
+
+.boton {
+    background-color: #d6336c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #c13560;
+}
+
+/* Contenedor de la carta */
+.contenedor {
+    display: none;
+    width: 60%;
+    margin: 30px auto;
+    border: 1px solid #d6336c;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.superior {
+    background-color: #d6336c;
+    height: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.mensaje {
+    padding: 20px;
+    text-align: left;
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.contenido-mensaje {
+    font-family: 'Young Serif', serif;
+    font-size: 1.2em;
+}
+
+.carta {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Animación del corazón latiendo */
+.carta i {
+    font-size: 3em;
+    color: #d6336c;
+    animation: latir 1s infinite;
+}
+
+@keyframes latir {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Botones */
+.botones {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        width: 90%;
+    }
+
+    .mensaje {
+        font-size: 1em;
+    }
+
+    .carta i {
+        font-size: 2em;
+    }
+}

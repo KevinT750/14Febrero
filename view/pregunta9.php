@@ -124,7 +124,7 @@
                 icon: "success",
                 confirmButtonText: "Aceptar",
               }).then(function() {
-                window.location.href = "pagina_correcta.html";
+                window.location.href = "pregunta10.php";
               });
             } else {
               // Respuesta incorrecta, disminuir intentos

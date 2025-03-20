@@ -46,9 +46,9 @@
     }
 
     img {
-      max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
-      height: auto; /* Mantiene las proporciones de la imagen */
-      margin-bottom: 20px; /* Agrega un espacio debajo de la imagen */
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -59,24 +59,24 @@
     <div class="row justify-content-center">
       <div class="col-md-6">
         <div class="card question-card">
-          <h3 class="text-center mb-4">Pregunta 3</h3>
-          <p class="text-center mb-4">¿En qué año Ecuador adoptó el dólar estadounidense como su moneda oficial?</p>
-          <img src="../public/img/dolar.jpg">
+          <h3 class="text-center mb-4">Pregunta 1</h3>
+          <p class="text-center mb-4">¿Cuál es el área de un triángulo que tiene una base de 8 m y una altura de 10 m?</p>
+          <img src="../public/img/triangulo.png">
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion1" value="opcion1">
-            <label class="form-check-label" for="opcion1">Opción 1: 1998</label>
+            <label class="form-check-label" for="opcion1">Opción 1: 80 m²</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion2" value="opcion2">
-            <label class="form-check-label" for="opcion2">Opción 2: 2002</label>
+            <label class="form-check-label" for="opcion2">Opción 2: 40 m²</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion3" value="opcion3">
-            <label class="form-check-label" for="opcion3">Opción 3: 2005</label>
+            <label class="form-check-label" for="opcion3">Opción 3: 100 m²</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion4" value="opcion4">
-            <label class="form-check-label" for="opcion4">Opción 4: 2000</label>
+            <label class="form-check-label" for="opcion4">Opción 4: 20 m²</label>
           </div>
           <div class="text-center mt-4">
             <button class="btn btn-custom" id="enviar">Enviar</button>
@@ -113,7 +113,7 @@
           // Verificar si se ha seleccionado una opción
           var selectedOption = document.querySelector('input[name="respuesta"]:checked');
           if (selectedOption) {
-            if (selectedOption.value === "opcion4") {
+            if (selectedOption.value === "opcion2") {
               // Respuesta correcta
               Swal.fire({
                 title: "¡Respuesta Correcta!",

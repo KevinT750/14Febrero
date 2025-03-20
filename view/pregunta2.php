@@ -60,23 +60,23 @@
       <div class="col-md-6">
         <div class="card question-card">
           <h3 class="text-center mb-4">Pregunta 2</h3>
-          <p class="text-center mb-4">Selecciona el número de cédula correcto de Kevin Terán.</p>
-          <img src="../public/img/cedula1.png">
+          <p class="text-center mb-4">Resuelve la ecuación cuadrática: (x^2 - 5x + 6 = 0)</p>
+          <img src="../public/img/La-formula-cuadradratica.png">
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion1" value="opcion1">
-            <label class="form-check-label" for="opcion1">Opción 1: 1002538146</label>
+            <label class="form-check-label" for="opcion1">Opción 1: (x1 = 3, x2 = 2)</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion2" value="opcion2">
-            <label class="form-check-label" for="opcion2">Opción 2: 1755709605</label>
+            <label class="form-check-label" for="opcion2">Opción 2: (x1 = 2, x2 = 3)</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion3" value="opcion3">
-            <label class="form-check-label" for="opcion3">Opción 3: 1755706905</label>
+            <label class="form-check-label" for="opcion3">Opción 3: (x1 = 4, x2 = 1)</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion4" value="opcion4">
-            <label class="form-check-label" for="opcion4">Opción 4: 1755906802</label>
+            <label class="form-check-label" for="opcion4">Opción 4: (x1 = -3, x2 = -2)</label>
           </div>
           <div class="text-center mt-4">
             <button class="btn btn-custom" id="enviar">Enviar</button>
@@ -113,7 +113,7 @@
           // Verificar si se ha seleccionado una opción
           var selectedOption = document.querySelector('input[name="respuesta"]:checked');
           if (selectedOption) {
-            if (selectedOption.value === "opcion2") {
+            if (selectedOption.value === "opcion1") {
               // Respuesta correcta
               Swal.fire({
                 title: "¡Respuesta Correcta!",

@@ -46,12 +46,9 @@
     }
 
     img {
-      max-width: 100%;
-      /* Asegura que la imagen no exceda el ancho de su contenedor */
-      height: auto;
-      /* Mantiene las proporciones de la imagen */
-      margin-bottom: 20px;
-      /* Agrega un espacio debajo de la imagen */
+      max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
+      height: auto; /* Mantiene las proporciones de la imagen */
+      margin-bottom: 20px; /* Agrega un espacio debajo de la imagen */
     }
   </style>
 </head>
@@ -63,27 +60,23 @@
       <div class="col-md-6">
         <div class="card question-card">
           <h3 class="text-center mb-4">Pregunta 5</h3>
-          <p class="text-center mb-4">Una fecha más para muchos puede ser,
-            pero para mí, es imposible de no reconocer.
-            El día en que te volviste solo mía,
-            y desde entonces, llenas mi vida de alegría.
-            ¿Cuál es esa fecha especial?</p>
-          <img src="../public/img/calendario.png">
+          <p class="text-center mb-4">Factoriza la siguiente expresión: ( x^3 + x^2 )</p>
+          <img src="../public/img/factor.png">
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion1" value="opcion1">
-            <label class="form-check-label" for="opcion1">Opción 1: 21 de septiembre del 2021</label>
+            <label class="form-check-label" for="opcion1">Opción 1: ( x1 = 0, x2 = -1 )</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion2" value="opcion2">
-            <label class="form-check-label" for="opcion2">Opción 2: 21 de septiembre del 2022</label>
+            <label class="form-check-label" for="opcion2">Opción 2: ( x1 = 1, x2 = -1 )</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion3" value="opcion3">
-            <label class="form-check-label" for="opcion3">Opción 3: 12 de septiembre del 2021</label>
+            <label class="form-check-label" for="opcion3">Opción 3: ( x1 = 0, x2 = 1 )</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion4" value="opcion4">
-            <label class="form-check-label" for="opcion4">Opción 4: 20 de septiembre del 2021</label>
+            <label class="form-check-label" for="opcion4">Opción 4: ( x1 = -1, x2 = 0 )</label>
           </div>
           <div class="text-center mt-4">
             <button class="btn btn-custom" id="enviar">Enviar</button>
@@ -120,7 +113,7 @@
           // Verificar si se ha seleccionado una opción
           var selectedOption = document.querySelector('input[name="respuesta"]:checked');
           if (selectedOption) {
-            if (selectedOption.value === "opcion3") {
+            if (selectedOption.value === "opcion1") {
               // Respuesta correcta
               Swal.fire({
                 title: "¡Respuesta Correcta!",

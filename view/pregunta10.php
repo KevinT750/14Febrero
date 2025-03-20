@@ -121,7 +121,7 @@
                 icon: "success",
                 confirmButtonText: "Aceptar",
               }).then(function() {
-                window.location.href = "pagina_correcta.html";
+                window.location.href = "mensajeFinal.php";
               });
             } else {
               // Respuesta incorrecta, disminuir intentos

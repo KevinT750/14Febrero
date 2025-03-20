@@ -60,23 +60,23 @@
       <div class="col-md-6">
         <div class="card question-card">
           <h3 class="text-center mb-4">Pregunta 1</h3>
-          <p class="text-center mb-4">¿Cuál es el proceso por el cual las plantas convierten la luz solar en energía?</p>
-          <img src="../public/img/fotosin.jpg">
+          <p class="text-center mb-4">Un ciclista se mueve en línea recta con una rapidez de 6.39 m/s. ¿Cuántos metros recorre en 10 segundos?</p>
+          <img src="../public/img/image.png">
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion1" value="opcion1">
-            <label class="form-check-label" for="opcion1">Opción 1: Fotosíntesis</label>
+            <label class="form-check-label" for="opcion1">Opción 1: 63.9 metros</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion2" value="opcion2">
-            <label class="form-check-label" for="opcion2">Opción 2: Respiración celular</label>
+            <label class="form-check-label" for="opcion2">Opción 2: 60 metros</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion3" value="opcion3">
-            <label class="form-check-label" for="opcion3">Opción 3: Fermentación</label>
+            <label class="form-check-label" for="opcion3">Opción 3: 50 metros</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion4" value="opcion4">
-            <label class="form-check-label" for="opcion4">Opción 4: Transpiración</label>
+            <label class="form-check-label" for="opcion4">Opción 4: 70 metros</label>
           </div>
           <div class="text-center mt-4">
             <button class="btn btn-custom" id="enviar">Enviar</button>

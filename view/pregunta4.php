@@ -60,23 +60,23 @@
       <div class="col-md-6">
         <div class="card question-card">
           <h3 class="text-center mb-4">Pregunta 4</h3>
-          <p class="text-center mb-4">¿Cuál es el nombre del volcán activo más alto de Ecuador?</p>
-          <img src="../public/img/Vólcan_Cotopaxi.jpg">
+          <p class="text-center mb-4">¿Cuál es el área de un círculo que tiene un radio de 5 m?</p>
+          <img src="../public/img/circulo.png">
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion1" value="opcion1">
-            <label class="form-check-label" for="opcion1">Opción 1: Cotopaxi</label>
+            <label class="form-check-label" for="opcion1">Opción 1: 25.5 m²</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion2" value="opcion2">
-            <label class="form-check-label" for="opcion2">Opción 2: Chimborazo</label>
+            <label class="form-check-label" for="opcion2">Opción 2: 50.5 m²</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion3" value="opcion3">
-            <label class="form-check-label" for="opcion3">Opción 3: Tungurahua</label>
+            <label class="form-check-label" for="opcion3">Opción 3: 78.5 m²</label>
           </div>
           <div class="form-check option">
             <input class="form-check-input" type="radio" name="respuesta" id="opcion4" value="opcion4">
-            <label class="form-check-label" for="opcion4">Opción 4: Cayambe</label>
+            <label class="form-check-label" for="opcion4">Opción 4: 100.5 m²</label>
           </div>
           <div class="text-center mt-4">
             <button class="btn btn-custom" id="enviar">Enviar</button>
@@ -113,7 +113,7 @@
           // Verificar si se ha seleccionado una opción
           var selectedOption = document.querySelector('input[name="respuesta"]:checked');
           if (selectedOption) {
-            if (selectedOption.value === "opcion1") {
+            if (selectedOption.value === "opcion3") {
               // Respuesta correcta
               Swal.fire({
                 title: "¡Respuesta Correcta!",
